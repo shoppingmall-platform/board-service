@@ -19,11 +19,8 @@ pipeline {
                     echo "> application 파일 위치로 이동"
                     cd src/main/resources
 
-                    echo "> application 값 변경"
-                    sed -i "s#\\\${DB_HOST}#${DB_HOST}#" application-prod.yml
-                    sed -i "s#\\\${JWT_PRIVATE_KEY}#${JWT_PRIVATE_KEY}#" application-prod.yml
-                    sed -i "s#\\\${JWT_PUBLIC_KEY}#${JWT_PUBLIC_KEY}#" application-prod.yml
-                    sed -i "s#\\\${SERVER_HOST}#${SERVER_HOST}#" application-prod.yml
+//                     echo "> application 값 변경"
+//                     sed -i "s#\\\${}#${}#" application-prod.yml
                     """
                 }
             }
