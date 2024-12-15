@@ -19,8 +19,8 @@ pipeline {
                     echo "> application 파일 위치로 이동"
                     cd src/main/resources
 
-//                     echo "> application 값 변경"
-//                     sed -i "s#\\\${}#${}#" application-prod.yml
+                    # echo "> application 값 변경"
+                    # sed -i "s#\\\${}#${}#" application-prod.yml
                     """
                 }
             }
